@@ -7,6 +7,9 @@ import bed from '../../public/images/bed.png'
 import slyth from '../../public/images/slyth.png'
 import Products from '../../public/images/Products.png'
 import share from '../../public/images/Share.png'
+import lock from '../../public/images/lock.png'
+import res from '../../public/images/res.png'
+import feature from '../../public/images/feature.png'
 
 const Hero = () => {
   return (
@@ -71,27 +74,20 @@ const Hero = () => {
 
         {/* Card 2 */}
         <div className="relative bg-white rounded-lg shadow-lg p-4">
-          {/* <img
-            src="/product2.jpg"
-            alt="Product 2"
-            className="w-full h-64 object-cover rounded-md mb-4"
-          /> */}
+          <Image src={lock} alt='image'  className="w-full h-64 object-cover rounded-md mb-4" />
           <h3 className="text-lg font-semibold text-gray-800 mb-2">Product 2</h3>
           <p className="text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <p className="text-xl font-bold text-black mb-4">$49.99</p>
           {/* Circle with Number */}
           <div className="absolute top-2 right-2 bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm">
-            2
+            -50%
           </div>
         </div>
 
         {/* Card 3 */}
         <div className="relative bg-white rounded-lg shadow-lg p-4">
-          {/* <img
-            src="/product3.jpg"
-            alt="Product 3"
-            className="w-full h-64 object-cover rounded-md mb-4"
-          /> */}
+         
+          <Image src={res} alt='image'  className="w-full h-64 object-cover rounded-md mb-4" />
           <h3 className="text-lg font-semibold text-gray-800 mb-2">Product 3</h3>
           <p className="text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <p className="text-xl font-bold text-black mb-4">$59.99</p>
@@ -103,17 +99,14 @@ const Hero = () => {
 
         {/* Card 4 */}
         <div className="relative bg-white rounded-lg shadow-lg p-4">
-          {/* <img
-            src="/product4.jpg"
-            alt="Product 4"
-            className="w-full h-64 object-cover rounded-md mb-4"
-          /> */}
+         
+          <Image src={feature} alt='faeture'  className="w-full h-64 object-cover rounded-md mb-4"/>
           <h3 className="text-lg font-semibold text-gray-800 mb-2">Product 4</h3>
           <p className="text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <p className="text-xl font-bold text-black mb-4">$69.99</p>
           {/* Circle with Number */}
           <div className="absolute top-2 right-2 bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm">
-            4
+            new
           </div>
         </div>
       </div>

@@ -21,20 +21,20 @@ const Page = () => {
 
       
       <div className="container mx-auto px-4 py-8 flex flex-col lg:flex-row">
-        {/* Blog Post Section */}
+       
         <div className="w-full lg:w-3/4">
           {/* Blog Post Image */}
           
           <Image src={laptop} alt='laptop' className="rounded-lg shadow-md w-full" />
 
-          {/* Blog Post Details */}
+          
           <div className="flex items-center text-sm text-gray-500 mt-4">
             <span className="mr-4">👤 Admin</span>
             <span className="mr-4">📅 14 Oct 2022</span>
             <span>🪵 Wood</span>
           </div>
 
-          {/* Blog Content */}
+          
           <p className="text-gray-700 mt-6">
             This is a sample blog post with relevant content about the selected topic. Explore the description and learn more.
           </p>
@@ -54,7 +54,6 @@ const Page = () => {
             </button>
           </div>
 
-          {/* Categories */}
           <h3 className="text-xl font-semibold mt-6">Categories</h3>
           <ul className="mt-4 text-gray-600">
             <li className="flex justify-between">

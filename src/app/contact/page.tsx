@@ -3,7 +3,7 @@ import React from 'react'
 const page = () => {
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center">
-    {/* Header Section */}
+    
     <div className="w-full bg-white shadow-md">
       <div className="max-w-6xl mx-auto py-6 px-4 flex flex-col items-center">
         <h1 className="text-4xl font-bold text-gray-800">Contact</h1>
@@ -11,7 +11,7 @@ const page = () => {
       </div>
     </div>
 
-    {/* Main Content */}
+   
     <div className="max-w-6xl w-full mx-auto mt-10 px-4">
       <h2 className="text-3xl font-bold text-center text-gray-800">
         Get In Touch With Us
@@ -23,7 +23,7 @@ const page = () => {
       </p>
 
       <div className="flex flex-col lg:flex-row mt-10 gap-8">
-        {/* Left Section */}
+       
         <div className="w-full lg:w-1/2 space-y-6">
           {/* Address */}
           <div className="flex items-start space-x-4">
@@ -48,7 +48,7 @@ const page = () => {
             </div>
           </div>
 
-          {/* Working Time */}
+        
           <div className="flex items-start space-x-4">
             <span className="text-xl text-yellow-500">⏰</span>
             <div>
@@ -63,7 +63,7 @@ const page = () => {
           </div>
         </div>
 
-        {/* Right Section */}
+     
         <div className="w-full lg:w-1/2 space-y-4">
           <form className="bg-white shadow-md rounded-lg p-6">
             {/* Name */}
@@ -82,7 +82,7 @@ const page = () => {
               />
             </div>
 
-            {/* Email */}
+            
             <div>
               <label
                 htmlFor="email"
@@ -98,7 +98,7 @@ const page = () => {
               />
             </div>
 
-            {/* Subject */}
+          
             <div>
               <label
                 htmlFor="subject"
@@ -114,7 +114,7 @@ const page = () => {
               />
             </div>
 
-            {/* Submit Button */}
+          
             <button
               type="submit"
               className="w-full mt-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition"

@@ -1,5 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
+import lock from '../../public/images/lock.png'
+import res from '../../public/images/res.png'
+import feature from '../../public/images/feature.png'
 
 const page = () => {
   return (
@@ -11,16 +15,16 @@ const page = () => {
         </div>
       </header>
 
-      {/* Breadcrumb */}
+     
       <nav className="bg-white py-3 px-6">
         <ol className="flex space-x-4 text-gray-500">
           <li><a href="/">Home</a></li>
-          <li>›</li>
+          <li> › </li>
           <li className="text-gray-700 font-semibold">Shop</li>
         </ol>
       </nav>
 
-      {/* Filters and Controls */}
+    
       <div className="px-6 py-4 bg-white flex flex-wrap items-center justify-between">
         <button className="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg">
           Filter
@@ -71,7 +75,7 @@ const page = () => {
               </button> */}
               <a href="/products" className="inline-block">
   <button className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">
-    Go to Example
+    Add to Cart
   </button>
 </a>
               <div className="flex space-x-2 text-gray-600">

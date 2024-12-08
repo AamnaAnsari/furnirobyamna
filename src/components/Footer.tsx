@@ -54,6 +54,8 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4 text-center">
         <p className="text-gray-600 text-sm">
           © 2023 Funiro. All rights reserved.
+          <br/>
+          Designed By Aamna Ansari
         </p>
       </div>
     </div>
