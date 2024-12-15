@@ -24,12 +24,23 @@ const Hero = () => {
       <Image src={wall} alt='hero'  className="absolute inset-0 w-full h-full object-cover"/>
 
       {/* Content Section */}
+      <div className="absolute top-1/2 right-20 transform -translate-y-1/2 bg-amber-100 shadow-lg squared-lg p-6 w-80 h-80">
+      <small className='text-black font-bold'>New Arrival</small>
+    <h2 className="text-2xl font-bold mb-4 text-yellow-600">Discover Our New Collection</h2>
+    <p className="text-black mb-4">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt maxime officiis doloribus velit.
+    </p>
+    <button className="bg-yellow-600 text-white px-4 py-2 squared">
+      BUY NOW
+    </button>
+  </div>
      
     </section>
 
         {/* Image Section */}
         <section className="py-8 bg-gray-100 text-center">
-          <h2 className="text-2xl font-bold text-black mb-4">Our Gallery</h2>
+          <h2 className="text-2xl font-bold text-black mb-4">Browse The Range
+          </h2>
           <p className="text-gray-600 mb-8">
             Explore our collection of stunning images that showcase the beauty and
             diversity of our work.
