@@ -14,28 +14,25 @@ import feature from '../../public/images/feature.png'
 const Hero = () => {
   return (
     <div className="container mx-auto">
-      {/* Wrapper div for both sections */}
+   
       <div className="space-y-12">
         {/* Hero Section */}
        
         <section className="relative w-full h-screen">
-      {/* Background Image using <img> tag (clear) */}
-    
-      <Image src={wall} alt='hero'  className="absolute inset-0 w-full h-full object-cover"/>
+        {/* Background Image */}
+        <Image src={wall} alt="hero" className="absolute inset-0 w-full h-full object-cover" />
 
-      {/* Content Section */}
-      <div className="absolute top-1/2 right-20 transform -translate-y-1/2 bg-amber-100 shadow-lg squared-lg p-6 w-80 h-80">
-      <small className='text-black font-bold'>New Arrival</small>
-    <h2 className="text-2xl font-bold mb-4 text-yellow-600">Discover Our New Collection</h2>
-    <p className="text-black mb-4">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt maxime officiis doloribus velit.
-    </p>
-    <button className="bg-yellow-600 text-white px-4 py-2 squared">
-      BUY NOW
-    </button>
-  </div>
-     
-    </section>
+        <div className="absolute top-1/2 left-0 right-0 transform -translate-y-1/2 p-6 w-full md:w-1/2 lg:w-1/3 bg-amber-100 shadow-lg rounded-lg mx-auto">
+          <small className="text-black font-bold">New Arrival</small>
+          <h2 className="text-2xl font-bold mb-4 text-yellow-600">Discover Our New Collection</h2>
+          <p className="text-black mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt maxime officiis doloribus velit.
+          </p>
+          <button className="bg-yellow-600 text-white px-6 py-3 rounded-md w-full md:w-auto">
+            BUY NOW
+          </button>
+        </div>
+      </section>
 
         {/* Image Section */}
         <section className="py-8 bg-gray-100 text-center">
@@ -63,7 +60,7 @@ const Hero = () => {
         </section>
       </div>
       <div className="container mx-auto py-12">
-      {/* Heading */}
+   
       <h2 className="text-3xl font-bold text-black text-center mb-8">
         Our Featured Products
       </h2>
@@ -102,7 +99,7 @@ const Hero = () => {
           <h3 className="text-lg font-semibold text-gray-800 mb-2">Product 3</h3>
           <p className="text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <p className="text-xl font-bold text-black mb-4">$59.99</p>
-          {/* Circle with Number */}
+         
           <div className="absolute top-2 right-2 bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm">
             3
           </div>
@@ -115,7 +112,7 @@ const Hero = () => {
           <h3 className="text-lg font-semibold text-gray-800 mb-2">Product 4</h3>
           <p className="text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <p className="text-xl font-bold text-black mb-4">$69.99</p>
-          {/* Circle with Number */}
+        
           <div className="absolute top-2 right-2 bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm">
             new
           </div>
@@ -126,27 +123,31 @@ const Hero = () => {
     
 
     <div className="flex flex-col lg:flex-row justify-between items-center min-h-screen py-12 px-6 bg-gray-100">
-      {/* Left side: Heading, Description, and Button */}
-      <div className="lg:w-1/2 mb-6 lg:mb-0 text-center lg:text-left">
-        <h2 className="text-3xl font-bold text-black mb-4">
-          50+ Beautiful rooms inspiration
-        </h2>
-        <p className="text-gray-600 mb-6">
-        Our designer already made a lot of beautiful prototypes of rooms to inspire you.
-        </p>
-        <button className="bg-yellow-500 text-white px-6 py-3 rounded-md hover:bg-yellow-600 transition duration-300">
-          Explore More
-        </button>
-      </div>
+ 
+  <div className="lg:w-1/2 mb-6 lg:mb-0 text-center lg:text-left">
+    <h2 className="text-3xl font-bold text-black mb-4">
+      50+ Beautiful Rooms Inspiration
+    </h2>
+    <p className="text-gray-600 mb-6 text-sm sm:text-base md:text-lg lg:text-xl">
+      Our designer has already created a lot of beautiful prototypes of rooms to inspire you.
+    </p>
+    <button className="bg-yellow-500 text-white px-6 py-3 rounded-md hover:bg-yellow-600 transition duration-300 text-sm sm:text-base">
+      Explore More
+    </button>
+  </div>
 
-      {/* Right side: Image */}
-      <div className="lg:w-1/2 flex justify-center">
-      
-        <Image src={Products} alt='products'  className="w-full max-w-2xl squared-2xl shadow-lg" />
-      </div>
-    </div>
+ 
+  <div className="lg:w-1/2 flex justify-center">
+    <Image
+      src={Products}
+      alt="products"
+      className="w-full max-w-2xl rounded-lg shadow-lg object-cover"
+    />
+  </div>
+</div>
 
-   <Image src={share} alt='share'/>
+<Image src={share} alt="share" className="w-full mt-12" />
+
     </div>
   )
 }

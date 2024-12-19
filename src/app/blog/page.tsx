@@ -19,49 +19,52 @@ const Page = () => {
         {/* Background Image */}
        
         <Image src={blog2} alt='blog' className="absolute  w-full h-full object-cover"/>
-        {/* Overlay Content */}
-        {/* <div className="absolute inset-0 bg-white/75 flex flex-col justify-center items-center">
-          <h1 className="text-4xl font-bold text-black">Blog</h1>
-          <p className="mt-2 text-gray-600">Home &gt; Blog</p>
-        </div> */}
+       
       </div>
 
       
       <div className="container mx-auto px-4 py-8 flex flex-col lg:flex-row">
        
-        <div className="w-full lg:w-3/4">
-          {/* Blog Post Image */}
-          
-          <Image src={laptop} alt='laptop' className="rounded-lg shadow-md w-full" />
+      <div className="w-full lg:w-3/4 px-4">
 
-          
-          <div className="flex items-center text-lg text-gray-500 mt-4">
-            <span className="mr-4">👤 Admin</span>
-            <span className="mr-4">📅 14 Oct 2022</span>
-            <span>🪵 Wood</span>
-          </div>
+  <Image src={laptop} alt="laptop" className="rounded-lg shadow-md w-full h-auto object-cover"/>
 
-          <h1 className='text-black mt-6 text-2xl'>Going all-in with millennial design</h1>
-          <p className="text-gray-700 mt-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc.In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum
-          </p> <br/>
-          <p className='text-black underline'>Read More</p>
-        </div>
+ 
+  <div className="flex items-center text-sm text-gray-500 mt-4">
+    <span className="mr-4">👤 Admin</span>
+    <span className="mr-4">📅 14 Oct 2022</span>
+    <span>🪵 Wood</span>
+  </div>
+
+  {/* Blog Post Title */}
+  <h1 className="text-2xl md:text-3xl font-bold text-black mt-6">
+    Going all-in with millennial design
+  </h1>
+
+  
+  <p className="text-gray-700 mt-6 text-base md:text-lg leading-relaxed">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.
+  </p>
+
+ 
+  <p className="text-black mt-4 text-lg font-semibold underline cursor-pointer">Read More</p>
+</div>
 
 
         {/* Sidebar Section */}
         <div className="w-full lg:w-1/4 mt-8 lg:mt-0 lg:pl-8">
           {/* Search Bar */}
-          <div className="flex items-center border rounded-lg p-2 shadow-sm">
-            <input
-              type="text"
-              placeholder="Search"
-              className="flex-grow outline-none px-2"
-            />
-            <button className="text-gray-600">
-              🔍
-            </button>
-          </div>
+          <div className="flex items-center border rounded-lg p-2 shadow-sm w-full max-w-xl mx-auto">
+  <input
+    type="text"
+    placeholder="Search"
+    className="flex-grow outline-none px-4 py-2 text-sm md:text-base rounded-lg focus:ring-2 focus:ring-yellow-500"
+  />
+  <button className="text-gray-600 p-2">
+    🔍
+  </button>
+</div>
+
 
           <h3 className="text-xl font-semibold mt-6">Categories</h3>
           <ul className="mt-4 text-gray-600">
@@ -83,10 +86,10 @@ const Page = () => {
           </ul>
           {/* <div>Recent Posts</div> */}
           <div className="flex flex-col items-center p-4 bg-gray-50 min-h-screen">
-  {/* <!-- Heading --> */} <br/>
+ <br/>
   <h1 className="text-3xl font-bold text-black mb-6">Recent Posts</h1>
 
-  {/* <!-- Image and Text Side by Side --> */}
+  
   <div className="flex flex-col md:flex-row items-center gap-6">
     {/* <!-- Image --> */}
     {/* <img src="/path-to-image.jpg" alt="Descriptive Text" class="w-64 h-64 object-cover rounded-md shadow-md"> */}
@@ -114,24 +117,28 @@ const Page = () => {
 
       <div className="container mx-auto px-4 py-8 flex flex-col lg:flex-row">
        
-       <div className="w-full lg:w-3/4">
-         {/* Blog Post Image */}
-         
-         <Image src={blog3} alt='laptop' className="rounded-lg shadow-md w-full" />
+      <div className="w-full lg:w-3/4 mx-auto px-4 sm:px-6 md:px-8">
+ 
+  <Image src={blog3} alt="laptop" className="rounded-lg shadow-md w-full h-auto" />
 
-         
-         <div className="flex items-center text-lg text-gray-500 mt-4">
-           <span className="mr-4">👤 Admin</span>
-           <span className="mr-4">📅 14 Oct 2022</span>
-           <span>🪵 Wood</span>
-         </div>
+  <div className="flex items-center text-lg text-gray-500 mt-4 space-x-4">
+    <span>👤 Admin</span>
+    <span>📅 14 Oct 2022</span>
+    <span>🪵 Wood</span>
+  </div>
 
-         <h1 className='text-black mt-6 text-2xl'>Exploring new ways of decorating</h1>
-         <p className="text-gray-700 mt-6">
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc.In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum
-         </p> <br/>
-         <p className='text-black underline'>Read More</p>
-       </div>
+ 
+  <h1 className="text-black mt-6 text-2xl sm:text-3xl font-semibold">Exploring new ways of decorating</h1>
+
+  {/* Blog Post Content */}
+  <p className="text-gray-700 mt-6 leading-relaxed">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.
+  </p>
+
+  
+  <p className="text-black underline mt-6 cursor-pointer hover:text-gray-700">Read More</p>
+</div>
+
 
 
        {/* Sidebar Section */}
@@ -161,57 +168,38 @@ const Page = () => {
 
      <div className="container mx-auto px-4 py-8 flex flex-col lg:flex-row">
        
-       <div className="w-full lg:w-3/4">
-         {/* Blog Post Image */}
-         
-         <Image src={blog4} alt='laptop' className="rounded-lg shadow-md w-full" />
+     <div className="w-full lg:w-3/4 mx-auto px-4 sm:px-6 md:px-8">
+  {/* Blog Post Image */}
+  <Image src={blog4} alt="laptop" className="rounded-lg shadow-md w-full h-auto" />
 
-         
-         <div className="flex items-center text-lg text-gray-500 mt-4">
-           <span className="mr-4">👤 Admin</span>
-           <span className="mr-4">📅 14 Oct 2022</span>
-           <span>🪵 Wood</span>
-         </div>
+ 
+  <div className="flex items-center text-lg text-gray-500 mt-4 space-x-4">
+    <span>👤 Admin</span>
+    <span>📅 14 Oct 2022</span>
+    <span>🪵 Wood</span>
+  </div>
 
-         <h1 className='text-black mt-6 text-2xl'>Handmade pieces that took time to make
-         </h1>
-         <p className="text-gray-700 mt-6">
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc.In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum
-         </p> <br/>
-         <p className='text-black underline'>Read More</p>
-       </div>
+  {/* Blog Post Title */}
+  <h1 className="text-black mt-6 text-2xl sm:text-3xl font-semibold">
+    Handmade pieces that took time to make
+  </h1>
+
+  {/* Blog Post Content */}
+  <p className="text-gray-700 mt-6 leading-relaxed">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.
+  </p>
+
+  {/* Links */}
+  <p className="text-black underline mt-6 cursor-pointer hover:text-gray-700">
+    Read More
+  </p>
+</div>
+
 
 
        {/* Sidebar Section */}
        <div className="w-full lg:w-1/4 mt-8 lg:mt-0 lg:pl-8">
-         {/* Search Bar */}
-         {/* <div className="flex items-center border rounded-lg p-2 shadow-sm">
-           <input
-             type="text"
-             placeholder="Search"
-             className="flex-grow outline-none px-2"
-           />
-           <button className="text-gray-600">
-             🔍
-           </button>
-         </div>
-
-         <h3 className="text-xl font-semibold mt-6">Categories</h3>
-         <ul className="mt-4 text-gray-600">
-           <li className="flex justify-between">
-             Crafts <span>2</span>
-           </li>
-           <li className="flex justify-between">
-             Design <span>8</span>
-           </li>
-           <li className="flex justify-between">
-             Handmade <span>7</span>
-           </li>
          
-           <li className="flex justify-between">
-             Wood <span>6</span>
-           </li>
-         </ul> */}
        </div>
      </div>
     </div>

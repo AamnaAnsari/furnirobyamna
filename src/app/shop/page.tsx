@@ -54,7 +54,7 @@ const page = () => {
      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 p-4">
   {/* <!-- Product Card --> */}
   <div className="relative bg-white shadow-md squared-lg overflow-hidden group">
-    {/* <!-- New Badge --> */}
+    
     <div className="absolute top-2 right-2 bg-red-500 text-white text-xs uppercase px-2 py-1 squared-full">
       -30%
     </div>
@@ -104,7 +104,7 @@ const page = () => {
     </div>
   </div>
 
-  {/* <!-- Add more cards as needed --> */}
+
   <div className="relative bg-white shadow-md squared-lg overflow-hidden group">
     <div className="absolute top-2 right-2 bg-red-500 text-white text-xs uppercase px-2 py-1 squared-full">
       -30%
@@ -387,67 +387,67 @@ const page = () => {
 </div>
 
 <div className="flex justify-center items-center min-h-screen bg-gray-100">
-  <div className="grid grid-cols-4 gap-6">
-    {/* <!-- Box 1 --> */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
+   {/* Box 1 */}
     <div className="w-24 h-24 bg-yellow-600 text-white flex items-center justify-center rounded-md cursor-pointer transition-transform transform hover:scale-110">
       1
     </div>
-    {/* <!-- Box 2 --> */}
+    
     <div className="w-24 h-24 bg-yellow-600 text-white flex items-center justify-center rounded-md cursor-pointer transition-transform transform hover:scale-110">
-       2
+      2
     </div>
-    {/* <!-- Box 3 --> */}
+   
     <div className="w-24 h-24 bg-yellow-600 text-white flex items-center justify-center rounded-md cursor-pointer transition-transform transform hover:scale-110">
       3
     </div>
-    {/* <!-- Box 4 --> */}
+   
     <div className="w-24 h-24 bg-yellow-600 text-white flex items-center justify-center rounded-md cursor-pointer transition-transform transform hover:scale-110">
       Next
     </div>
   </div>
 </div>
 
+
 <div className="bg-yellow-50 py-8">
-      <div className="max-w-6xl mx-auto px-4 flex flex-wrap justify-between items-center gap-6">
-        {/* Feature 1 */}
-        <div className="flex items-center space-x-5">
-          <span className="text-3xl">🏆</span>
-          <div>
-            <h3 className="text-lg font-semibold text-gray-800">High Quality</h3>
-            <p className="text-gray-600 text-sm">crafted from top materials</p>
-          </div>
-        </div>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-
-        {/* Feature 2 */}
-        <div className="flex items-center space-x-4">
-          <span className="text-3xl">✔️</span>
-          <div>
-            <h3 className="text-lg font-semibold text-gray-800">
-              Warranty Protection
-            </h3>
-            <p className="text-gray-600 text-sm">Over 2 years</p>
-          </div>
-        </div> &nbsp; &nbsp; &nbsp; &nbsp;
-
-        {/* Feature 3 */}
-        <div className="flex items-center space-x-4">
-          <span className="text-3xl">📦</span>
-          <div>
-            <h3 className="text-lg font-semibold text-gray-800">Free Shipping</h3>
-            <p className="text-gray-600 text-sm">Order over 150 $</p>
-          </div>
-        </div> &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;
-
-        {/* Feature 4 */}
-        <div className="flex items-center space-x-4">
-          <span className="text-3xl">🎧</span>
-          <div>
-            <h3 className="text-lg font-semibold text-gray-800">24/7 Support</h3>
-            <p className="text-gray-600 text-sm">Dedicated support</p>
-          </div>
-        </div>
+  <div className="max-w-6xl mx-auto px-4 flex flex-wrap justify-between items-center gap-6">
+    {/* Icon 1 */}
+    <div className="flex items-center space-x-4 md:space-x-5">
+      <span className="text-3xl">🏆</span>
+      <div>
+        <h3 className="text-lg font-semibold text-gray-800">High Quality</h3>
+        <p className="text-gray-600 text-sm">Crafted from top materials</p>
       </div>
-    </div> 
+    </div>
+
+    {/* Icon 2 */}
+    <div className="flex items-center space-x-4 md:space-x-5">
+      <span className="text-3xl">✔️</span>
+      <div>
+        <h3 className="text-lg font-semibold text-gray-800">Warranty Protection</h3>
+        <p className="text-gray-600 text-sm">Over 2 years</p>
+      </div>
+    </div>
+
+    {/* Icon 3 */}
+    <div className="flex items-center space-x-4 md:space-x-5">
+      <span className="text-3xl">📦</span>
+      <div>
+        <h3 className="text-lg font-semibold text-gray-800">Free Shipping</h3>
+        <p className="text-gray-600 text-sm">Order over $150</p>
+      </div>
+    </div>
+
+    {/* Icon 4 */}
+    <div className="flex items-center space-x-4 md:space-x-5">
+      <span className="text-3xl">🎧</span>
+      <div>
+        <h3 className="text-lg font-semibold text-gray-800">24/7 Support</h3>
+        <p className="text-gray-600 text-sm">Dedicated support</p>
+      </div>
+    </div>
+  </div>
+</div>
+
     </div>
   )
 }
