@@ -13,15 +13,34 @@ const Footer = () => {
         </div>
 
         {/* Links Section */}
-        <div>
-          <h3 className="text-lg font-semibold text-gray-800">Links</h3>
-          <ul className="mt-2 space-y-2">
-            <li className="text-gray-600 text-sm hover:text-yellow-600 cursor-pointer">Home</li>
-            <li className="text-gray-600 text-sm hover:text-yellow-600 cursor-pointer">Shop</li>
-            <li className="text-gray-600 text-sm hover:text-yellow-600 cursor-pointer">About</li>
-            <li className="text-gray-600 text-sm hover:text-yellow-600 cursor-pointer">Contact</li>
-          </ul>
-        </div>
+        <div className="bg-gray-50 py-8">
+  <div className="max-w-6xl mx-auto px-4">
+    <h3 className="text-lg font-semibold text-gray-800 mb-4">Links</h3>
+    <ul className="space-y-3">
+      <li>
+        <a href="/" className="text-gray-600 text-sm hover:text-yellow-600 cursor-pointer block">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="/shop" className="text-gray-600 text-sm hover:text-yellow-600 cursor-pointer block">
+          Shop
+        </a>
+      </li>
+      <li>
+        <a href="/about" className="text-gray-600 text-sm hover:text-yellow-600 cursor-pointer block">
+          About
+        </a>
+      </li>
+      <li>
+        <a href="/contact" className="text-gray-600 text-sm hover:text-yellow-600 cursor-pointer block">
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
 
         
         <div>

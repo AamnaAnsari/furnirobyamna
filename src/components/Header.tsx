@@ -16,12 +16,21 @@ const Header = () => {
       </div>
 
       {/* Navigation Links */}
-      <nav className="hidden md:flex space-x-6">
-        <a href="#" className="text-gray-600 hover:text-black text-lg">Home</a>
-        <a href="/shop" className="text-gray-600 hover:text-black text-lg">Shop</a>
-        <a href="/blog" className="text-gray-600 hover:text-black text-lg">Blog</a>
-        <a href="/contact" className="text-gray-600 hover:text-black text-lg">Contact</a>
-      </nav>
+      <nav className="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0">
+  <a href="/" className="text-gray-600 hover:text-black text-lg">
+    Home
+  </a>
+  <a href="/shop" className="text-gray-600 hover:text-black text-lg">
+    Shop
+  </a>
+  <a href="/blog" className="text-gray-600 hover:text-black text-lg">
+    Blog
+  </a>
+  <a href="/contact" className="text-gray-600 hover:text-black text-lg">
+    Contact
+  </a>
+</nav>
+
 
       {/* Icons Section */}
       <div className="flex space-x-6">
