@@ -33,14 +33,72 @@ const page = () => {
       <div className="container mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
   {/* Product Image */}
   <div>
-    <Image
+    {/* <Image
       src={sofa}
       alt="sofa"
       className="w-full rounded-lg shadow-md"
       width={500} 
       height={500} 
-    />
+    /> */}
+
+<div className="bg-[#FAF4EB] min-h-screen flex justify-center items-center py-10">
+      <div className="flex flex-col md:flex-row items-center gap-8">
+        {/* Sidebar with smaller images */}
+        <div className="flex flex-col space-y-4">
+          <div className="bg-[#FAF4EB] rounded-lg shadow-md p-2 flex items-center justify-center w-16 h-16 md:w-24 md:h-24">
+            <Image
+              src="/images/sofa2.png"
+              alt="Furniture item 1"
+              width={96}
+              height={80}
+              className="object-contain"
+            />
+          </div>
+          <div className="bg-[#FAF4EB] rounded-lg shadow-md p-2 flex items-center justify-center w-16 h-16 md:w-24 md:h-24">
+            <Image
+              src="/images/sofa3.png"
+              alt="Furniture item 2"
+              width={80}
+              height={80}
+              className="object-contain"
+            />
+          </div>
+          <div className="bg-[#FAF4EB] rounded-lg shadow-md p-2 flex items-center justify-center w-16 h-16 md:w-24 md:h-24">
+            <Image
+              src="/images/sofa4.png"
+              alt="Furniture item 3"
+              width={80}
+              height={80}
+              className="object-contain"
+            />
+          </div>
+          <div className="bg-[#FAF4EB] rounded-lg shadow-md p-2 flex items-center justify-center w-16 h-16 md:w-24 md:h-24">
+            <Image
+              src="/images/sofa5.png"
+              alt="Furniture item 4"
+              width={86}
+              height={80}
+              className="object-contain"
+            />
+          </div>
+        </div>
+
+        {/* Main larger image */}
+        <div className="bg-[#FAF4EB] squared-lg shadow-lg p-4 w-80 h-80 md:w-[500px] md:h-[500px] flex items-center justify-center mr-6">
+          <Image
+            src="/images/Asgaard sofa 3.png"
+            alt="Main Furniture"
+            width={500}
+            height={500}
+            className="object-contain"
+          />
+        </div>
+      </div>
+    </div>
+
   </div>
+
+  
 
   {/* Product Details */}
   <div>

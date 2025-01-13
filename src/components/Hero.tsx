@@ -146,7 +146,105 @@ const Hero = () => {
   </div>
 </div>
 
-<Image src={share} alt="share" className="w-full mt-12" />
+
+<div className="min-h-screen bg-white flex flex-col items-center justify-center">
+      <h1 className="text-gray-400 text-lg font-bold mb-8">
+        Share your setup with <br/> <span className="text-black text-3xl">#FuniroFurniture</span>
+      </h1>
+      <div className="grid grid-cols-5 gap-4 max-w-6xl">
+        {/* Left Column */}
+        <div className="col-span-1 row-span-2">
+        <Image
+  src="/images/grid1.png"
+  alt="Setup 1"
+  width={50}
+  height={20}
+  className="squared-lg mt-10 ml-auto"
+/>
+
+        </div>
+        <div className="col-span-1 row-span-2">
+          <Image
+            src="/images/grid2.png"
+            alt="Setup 2"
+            width={300}
+            height={400}
+            className="squared-lg mt-20"
+          />
+        </div>
+
+        {/* Center Image */}
+        <div className="col-span-1 row-span-2">
+          <Image
+            src="/images/grid5.png"
+            alt="Setup 3"
+            width={300}
+            height={400}
+            className="squared-lg mt-20"
+          />
+        </div>
+
+        {/* Left Bottom */}
+        <div className="col-span-1 row-span-1">
+          <Image
+            src="/images/grid7.png"
+            alt="Setup 4"
+            width={300}
+            height={200}
+            className="squared-lg"
+          />
+        </div>
+        <div className="col-span-1 row-span-1">
+          <Image
+            src="/images/grid6.png"
+            alt="Setup 5"
+            width={300}
+            height={200}
+            className="squared-lg"
+          />
+        </div>
+
+        {/* Right Column */}
+        <div className="col-span-1 row-span-2">
+          <Image
+            src="/images/grid9.png"
+            alt="Setup 6"
+            width={200}
+            height={300}
+            className="squared-lg mb-10 -mt-16"
+          />
+        </div>
+        <div className="col-span-1 row-span-2">
+          <Image
+            src="/images/grid8.png"
+            alt="Setup 7"
+            width={300}
+            height={400}
+            className="squared-lg mr-10"
+          />
+        </div>
+
+        {/* Right Bottom */}
+        <div className="col-span-1 row-span-1">
+          <Image
+            src="/images/grid3.png"
+            alt="Setup 8"
+            width={200}
+            height={100}
+            className="squared-lg mb-10 -mt-20 ml-6"
+          />
+        </div>
+        <div className="col-span-1 row-span-1">
+          <Image
+            src="/images/grid4.png"
+            alt="Setup 9"
+            width={300}
+            height={200}
+            className="squared-lg ml-2 -mt-20"
+          />
+        </div>
+      </div>
+    </div>
 
     </div>
   )
